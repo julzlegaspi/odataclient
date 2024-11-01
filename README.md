@@ -32,9 +32,25 @@ class TestController extends Controller
     {
         $odata = new SAPODataClient;
 
-        $result = $odata->getOdataClient()->from('Orders')->get();
+        // Get lists of orders
+        $results = $odata->getOdataClient()
+            ->from('Orders')
+            ->get();
+        dd($results);
 
-        dd($result);
+        // Get order by id
+        $result = $odata->getOdataClient()
+            ->from('Orders')
+            ->find(1);
+        dd($result)
+
+        // Update order by id
+        $result = $odata->getOdataClient()
+            ->from('Orders')
+            ->whereKey(1)
+            ->patch([
+                'key' => 'value'
+            ]);
     }
 }
 ```
