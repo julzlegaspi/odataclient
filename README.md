@@ -1,1 +1,2 @@
-composer install julzlegaspi/odataclient
+# Installation
+ composer require julzlegaspi/odataclient
