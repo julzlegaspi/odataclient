@@ -1,8 +1,12 @@
 # Installation
-```composer require julzlegaspi/odataclient```
+```
+composer require julzlegaspi/odataclient
+```
 
 # Publish Provider
-```php artisan vendor:publish --provider="Julzlegaspi\Odataclient\ODataClientServiceProvider"```
+```
+php artisan vendor:publish --provider="Julzlegaspi\Odataclient\ODataClientServiceProvider"
+```
 
 # Add to .env file
 ```
