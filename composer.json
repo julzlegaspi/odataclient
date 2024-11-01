@@ -1,0 +1,27 @@
+{
+    "name": "julzlegaspi/odataclient",
+    "description": "SAP B1 OData Client",
+    "type": "package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Julzlegaspi\\Odataclient\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Julzlegaspi\\Odataclient\\ODataClientServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Julz"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "saintsystems/odata-client": "^0.7.4"
+    }
+}
